@@ -5,6 +5,7 @@
 @use "./mixins.scss";
 
 // блоки
+@use "./blocks/page-body.scss";
 @use "./blocks/main-header.scss";
 @use "./blocks/main-navigation.scss";
 @use "./blocks/button.scss";

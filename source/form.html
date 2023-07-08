@@ -9,6 +9,8 @@
     <link rel="icon" href="img/favicons/favicon32.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/favicon180.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="./fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
   <body class="page-body">
     <div class="page-body__wrapper">
@@ -157,9 +159,11 @@
           </div>
           <div class="location__map map">
             <picture>
+              <source media="(min-width: 1200px)" srcset="./img/index/location-desktop.webp, ./img/index/location-desktop@2x.webp 2x" width="1440" height="400">
               <source media="(min-width: 1200px)" srcset="./img/index/location-desktop.png, ./img/index/location-desktop@2x.png 2x" width="1440" height="400">
+              <source media="(min-width: 768px)" srcset="./img/index/location-tablet.webp, ./img/index/location-tablet@2x.webp 2x" width="768" height="400">
               <source media="(min-width: 768px)" srcset="./img/index/location-tablet.png, ./img/index/location-tablet@2x.png 2x" width="768" height="400">
-              <img class="map__image" src="./img/index/location-mobile.png" srcset="./img/index/location-mobile@2x.png 2x" alt="Как до нас добраться." width="320" height="362">
+              <img class="map__image" src="./img/index/location-mobile.webp" srcset="./img/index/location-mobile@2x.png 2x" alt="Как до нас добраться." width="320" height="362">
             </picture>
             <iframe class="map__google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036296175446!2d30.318176492116848!3d59.9387190974212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1686943776856!5m2!1sru!2sru" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>

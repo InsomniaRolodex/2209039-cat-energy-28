@@ -141,7 +141,7 @@
 
 .advantages__text {
   @include m.indent-reset;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
 
   @media (min-width: v.$tablet-width) {
     font-size: 16px;

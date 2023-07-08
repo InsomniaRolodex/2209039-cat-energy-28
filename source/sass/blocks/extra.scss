@@ -80,7 +80,7 @@
 
 .extra__description {
   @include m.indent-reset;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   line-height: 20px;
   display: flex;
   justify-content: space-between;

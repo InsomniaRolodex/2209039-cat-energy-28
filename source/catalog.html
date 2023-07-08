@@ -9,6 +9,8 @@
     <link rel="icon" href="img/favicons/favicon32.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/favicon180.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="./fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
   <body class="page-body">
     <div class="page-body__wrapper">
@@ -21,6 +23,7 @@
                 <source media="(min-width: 768px)" srcset="./img/stack.svg#logo-tablet" width="60" height="50">
                 <img class="main-header__logo-icon" src="./img/stack.svg#logo-mobile" alt="Логотип CAT ENERGY." width="33" height="38">
               </picture>
+            </a>
               <a class="main-header__text-logo" href="./index.html">
                 <span class="visually-hidden">CAT ENERGY</span>
               </a>
@@ -52,8 +55,9 @@
           <ul class="catalog-cards__list">
             <li class="catalog-cards__item food-card">
               <picture>
+                <source media="(min-width: 768px)" srcset="./img/catalog/catalog-1-tablet.webp, ./img/catalog/catalog-1-tablet@2x.webp 2x" width="161" height="172">
                 <source media="(min-width: 768px)" srcset="./img/catalog/catalog-1-tablet.png, ./img/catalog/catalog-1-tablet@2x.png 2x" width="161" height="172">
-                <img class="food-card__image" src="./img/catalog/catalog-1-mobile.png" srcset="./img/catalog/catalog-1-mobile@2x.png 2x" alt="Cat Energy: Курица." width="68" height="86">
+                <img class="food-card__image" src="./img/catalog/catalog-1-mobile.webp" srcset="./img/catalog/catalog-1-mobile@2x.png 2x" alt="Cat Energy: Курица." width="68" height="86">
               </picture>
                 <div class="food-card__text">
                 <span class="food-card__name">Cat Energy PRO 500 г</span>
@@ -70,9 +74,11 @@
             </li>
             <li class="catalog-cards__item food-card food-card--big">
               <picture>
+                <source media="(min-width: 1200px)" srcset="./img/catalog/catalog-2-desktop.webp, ./img/catalog/catalog-2-desktop@2x.webp 2x" width="172" height="196">
                 <source media="(min-width: 1200px)" srcset="./img/catalog/catalog-2-desktop.png, ./img/catalog/catalog-2-desktop@2x.png 2x" width="172" height="196">
+                <source media="(min-width: 768px)" srcset="./img/catalog/catalog-2-tablet.webp, ./img/catalog/catalog-2-tablet@2x.webp 2x" width="168" height="206">
                 <source media="(min-width: 768px)" srcset="./img/catalog/catalog-2-tablet.png, ./img/catalog/catalog-2-tablet@2x.png 2x" width="168" height="206">
-                <img class="food-card__image food-card__image--big" src="./img/catalog/catalog-2-mobile.png" srcset="./img/catalog/catalog-2-mobile@2x.png 2x" alt="Cat Energy: Курица. Большой." width="84" height="100">
+                <img class="food-card__image food-card__image--big" src="./img/catalog/catalog-2-mobile.webp" srcset="./img/catalog/catalog-2-mobile@2x.png 2x" alt="Cat Energy: Курица. Большой." width="84" height="100">
               </picture>
                 <div class="food-card__text food-card__text--big">
                 <span class="food-card__name">Cat Energy PRO 1000 г</span>
@@ -89,8 +95,9 @@
             </li>
             <li class="catalog-cards__item food-card">
               <picture>
+                <source media="(min-width: 768px)" srcset="./img/catalog/catalog-3-tablet.webp, ./img/catalog/catalog-3-tablet@2x.webp 2x" width="161" height="172">
                 <source media="(min-width: 768px)" srcset="./img/catalog/catalog-3-tablet.png, ./img/catalog/catalog-3-tablet@2x.png 2x" width="161" height="172">
-                <img class="food-card__image food-card__image--fish" src="./img/catalog/catalog-3-mobile.png" srcset="./img/catalog/catalog-3-mobile@2x.png 2x" alt="Cat Energy: Рыба." width="68" height="86">
+                <img class="food-card__image food-card__image--fish" src="./img/catalog/catalog-3-mobile.webp" srcset="./img/catalog/catalog-3-mobile@2x.png 2x" alt="Cat Energy: Рыба." width="68" height="86">
               </picture>
                 <div class="food-card__text">
                 <span class="food-card__name">Cat Energy PRO 500 г</span>
@@ -107,9 +114,11 @@
             </li>
             <li class="catalog-cards__item food-card food-card--big">
               <picture>
+                <source media="(min-width: 1200px)" srcset="./img/catalog/catalog-4-desktop.webp, ./img/catalog/catalog-4-desktop@2x.webp 2x" width="172" height="196">
                 <source media="(min-width: 1200px)" srcset="./img/catalog/catalog-4-desktop.png, ./img/catalog/catalog-4-desktop@2x.png 2x" width="172" height="196">
+                <source media="(min-width: 768px)" srcset="./img/catalog/catalog-4-tablet.webp, ./img/catalog/catalog-4-tablet@2x.webp 2x" width="168" height="206">
                 <source media="(min-width: 768px)" srcset="./img/catalog/catalog-4-tablet.png, ./img/catalog/catalog-4-tablet@2x.png 2x" width="168" height="206">
-                <img class="food-card__image food-card__image--big" src="./img/catalog/catalog-4-mobile.png" srcset="./img/catalog/catalog-4-mobile@2x.png 2x" alt="Cat Energy: Рыба. Большой." width="84" height="100">
+                <img class="food-card__image food-card__image--big" src="./img/catalog/catalog-4-mobile.webp" srcset="./img/catalog/catalog-4-mobile@2x.png 2x" alt="Cat Energy: Рыба. Большой." width="84" height="100">
               </picture>
                 <div class="food-card__text food-card__text--big">
                 <span class="food-card__name">Cat Energy PRO 1000 г</span>
@@ -126,8 +135,9 @@
             </li>
             <li class="catalog-cards__item food-card">
               <picture>
+                <source media="(min-width: 768px)" srcset="./img/catalog/catalog-5-tablet.webp, ./img/catalog/catalog-5-tablet@2x.webp 2x" width="161" height="172">
                 <source media="(min-width: 768px)" srcset="./img/catalog/catalog-5-tablet.png, ./img/catalog/catalog-5-tablet@2x.png 2x" width="161" height="172">
-                <img class="food-card__image food-card__image--buckwheat" src="./img/catalog/catalog-5-mobile.png" srcset="./img/catalog/catalog-5-mobile@2x.png 2x" alt="Cat Energy: Гречка" width="68" height="86">
+                <img class="food-card__image food-card__image--buckwheat" src="./img/catalog/catalog-5-mobile.webp" srcset="./img/catalog/catalog-5-mobile@2x.png 2x" alt="Cat Energy: Гречка" width="68" height="86">
               </picture>
                 <div class="food-card__text">
                 <span class="food-card__name">Cat Energy SLIM 500 г</span>
@@ -144,9 +154,11 @@
             </li>
             <li class="catalog-cards__item food-card food-card--big">
               <picture>
+                <source media="(min-width: 1200px)" srcset="./img/catalog/catalog-6-desktop.webp, ./img/catalog/catalog-6-desktop@2x.webp 2x" width="172" height="196">
                 <source media="(min-width: 1200px)" srcset="./img/catalog/catalog-6-desktop.png, ./img/catalog/catalog-6-desktop@2x.png 2x" width="172" height="196">
+                <source media="(min-width: 768px)" srcset="./img/catalog/catalog-6-tablet.webp, ./img/catalog/catalog-6-tablet@2x.webp 2x" width="168" height="206">
                 <source media="(min-width: 768px)" srcset="./img/catalog/catalog-6-tablet.png, ./img/catalog/catalog-6-tablet@2x.png 2x" width="168" height="206">
-                <img class="food-card__image food-card__image--big" src="./img/catalog/catalog-6-mobile.png" srcset="./img/catalog/catalog-6-mobile@2x.png 2x" alt="Cat Energy: Гречка. Большой." width="84" height="100">
+                <img class="food-card__image food-card__image--big" src="./img/catalog/catalog-6-mobile.webp" srcset="./img/catalog/catalog-6-mobile@2x.png 2x" alt="Cat Energy: Гречка. Большой." width="84" height="100">
               </picture>
                 <div class="food-card__text food-card__text--big">
                 <span class="food-card__name">Cat Energy SLIM 1000 г</span>
@@ -163,8 +175,9 @@
             </li>
             <li class="catalog-cards__item food-card">
               <picture>
+                <source media="(min-width: 768px)" srcset="./img/catalog/catalog-7-tablet.webp, ./img/catalog/catalog-7-tablet@2x.webp 2x" width="161" height="172">
                 <source media="(min-width: 768px)" srcset="./img/catalog/catalog-7-tablet.png, ./img/catalog/catalog-7-tablet@2x.png 2x" width="161" height="172">
-                <img class="food-card__image food-card__image--rice" src="./img/catalog/catalog-7-mobile.png" srcset="./img/catalog/catalog-7-mobile@2x.png 2x" alt="Cat Energy: Рис." width="68" height="86">
+                <img class="food-card__image food-card__image--rice" src="./img/catalog/catalog-7-mobile.webp" srcset="./img/catalog/catalog-7-mobile@2x.png 2x" alt="Cat Energy: Рис." width="68" height="86">
               </picture>
                 <div class="food-card__text">
                 <span class="food-card__name">Cat Energy SLIM 500 г</span>
@@ -239,10 +252,12 @@
           </div>
           <div class="location__map map">
             <picture>
+              <source media="(min-width: 1200px)" srcset="./img/index/location-desktop.webp, ./img/index/location-desktop@2x.webp 2x" width="1440" height="400">
               <source media="(min-width: 1200px)" srcset="./img/index/location-desktop.png, ./img/index/location-desktop@2x.png 2x" width="1440" height="400">
+              <source media="(min-width: 768px)" srcset="./img/index/location-tablet.webp, ./img/index/location-tablet@2x.webp 2x" width="768" height="400">
               <source media="(min-width: 768px)" srcset="./img/index/location-tablet.png, ./img/index/location-tablet@2x.png 2x" width="768" height="400">
-              <img class="map__image" src="./img/index/location-mobile.png" srcset="./img/index/location-mobile@2x.png 2x" alt="Как до нас добраться." width="320" height="362">
-            </picture>
+              <img class="map__image" src="./img/index/location-mobile.webp" srcset="./img/index/location-mobile@2x.png 2x" alt="Как до нас добраться." width="320" height="362">
+           </picture>
             <iframe class="map__google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036296175446!2d30.318176492116848!3d59.9387190974212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1686943776856!5m2!1sru!2sru" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>
           </div>

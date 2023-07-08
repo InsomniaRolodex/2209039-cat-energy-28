@@ -161,6 +161,7 @@
   border: 1px solid #e7e7e7;
   color: v.$secondary-text;
   transition-duration: 0.3s;
+  appearance: textfield;
 
   &::-webkit-outer-spin-button,
   &::-webkit-inner-spin-button {
@@ -396,7 +397,7 @@
 }
 
 .form-section__small-text {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
 

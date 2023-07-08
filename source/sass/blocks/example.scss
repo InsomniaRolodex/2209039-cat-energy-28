@@ -36,7 +36,7 @@
 
 .example__text {
   @include m.indent-reset;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   margin-bottom: 20px;
   color: v.$secondary-text;
 
