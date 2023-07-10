@@ -157,6 +157,7 @@ export default gulp.series(
   styles,
   stack,
   copyImages,
+  html,
   gulp.series(
     server,
     watcher

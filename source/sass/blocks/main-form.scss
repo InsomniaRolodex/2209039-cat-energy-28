@@ -21,14 +21,16 @@
   @media (min-width: v.$tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    max-width: 612px;
-    padding: 0 111px;
+    max-width: 530px;
+    padding: 0 70px;
     margin-bottom: 66px;
   }
 
   @media (min-width: v.$desktop-width) {
     display: block;
     margin-right: auto;
+    padding: 0 111px;
+    max-width: 612px;
   }
 }
 

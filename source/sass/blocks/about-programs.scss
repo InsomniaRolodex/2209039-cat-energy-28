@@ -44,6 +44,8 @@
 }
 
 .about-programs__list {
+  margin: 0;
+
   @media (min-width: v.$tablet-width) {
     margin-top: 75px;
   }
