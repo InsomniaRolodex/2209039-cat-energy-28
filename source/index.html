@@ -1,194 +1,259 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="./css/style.min.css">
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicons/favicon32.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="img/favicons/favicon180.png">
-    <link rel="manifest" href="manifest.webmanifest">
-    <link rel="preload" href="./fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>HTML Academy: Ягоды</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="./fonts/Comfortaa/comfortaa.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Raleway/raleway-light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
   <body class="page-body">
-    <div class="page-body__wrapper">
-      <header class="main-header">
-        <div class="main-header__wrapper">
-          <div class="main-header__topline">
-            <a class="main-header__logo" href="./index.html">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="./img/stack.svg#logo-desktop" width="70" height="60">
-                <source media="(min-width: 768px)" srcset="./img/stack.svg#logo-tablet" width="60" height="50">
-                <img class="main-header__logo-icon" src="./img/stack.svg#logo-mobile" alt="Логотип CAT ENERGY." width="33" height="38">
-              </picture>
-            </a>
-            <a class="main-header__text-logo" href="./index.html">
-              <span class="visually-hidden">CAT ENERGY</span>
-            </a>
-            <button class="main-header__toggle main-header__toggle--closed" type="button">
-              <span class="visually-hidden">Меню</span>
-            </button>
-          </div>
-          <nav class="main-navigation main-navigation--closed main-navigation--nojs">
-            <div class="main-navigation__wrapper">
-              <ul class="main-navigation__list">
-                <li class="main-navigation__item">
-                  <a class="main-navigation__link main-navigation__link--current" href="./index.html">Главная</a>
-                </li>
-                <li class="main-navigation__item">
-                  <a class="main-navigation__link" href="./catalog.html">каталог продукции</a>
-                </li>
-                <li class="main-navigation__item">
-                  <a class="main-navigation__link" href="./form.html">подбор программы</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </header>
-      <main class="main-container main-index">
-        <h1 class="visually-hidden">CAT ENERGY. Главная страница.</h1>
-        <section class="promo-section">
-          <div class="promo-section__wrapper">
-            <h2 class="promo-section__headline">Функциональное питание для котов</h2>
-            <span class="promo-section__slogan">Занялся собой? Займись котом!</span>
-            <picture>
-              <source media="(min-width: 1200px)" srcset="./img/index/index-can-dekstop.webp, ./img/index/index-can-desktop@2x.webp 2x" width="552" height="499">
-              <source media="(min-width: 1200px)" srcset="./img/index/index-can-dekstop.png, ./img/index/index-can-desktop@2x.png 2x" width="552" height="499">
-              <source media="(min-width: 768px)" srcset="./img/index/index-can-tablet.webp, ./img/index/index-can-tablet@2x.webp 2x" width="709" height="609">
-              <source media="(min-width: 768px)" srcset="./img/index/index-can-tablet.png, ./img/index/index-can-tablet@2x.png 2x" width="709" height="609">
-              <img class="promo-section__image" src="./img/index/index-can-mobile.webp" srcset="./img/index/index-can-mobile@2x.png 2x" width="280" height="270" alt="Кошачье питание CAT ENERGY.">
-            </picture>
-            <a class="button button--promo" href="./catalog.html">подобрать программу</a>
-          </div>
-        </section>
-        <section class="about-programs">
-          <h2 class="visually-hidden">Наши программы.</h2>
-          <div class="about-programs__card program-card program-card--slim">
-            <b class="program-card__headline">похудение</b>
-            <p class="program-card__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="program-card__link" href="#">каталог slim</a>
-          </div>
-          <div class="about-programs__card program-card program-card--weight">
-            <b class="program-card__headline">Набор массы</b>
-            <p class="program-card__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="program-card__link" href="#">каталог pro</a>
-          </div>
-          <h3 class="about-programs__headline section-headline section-headline--programs">Как это работает</h3>
-          <ol class="about-programs__list advantages">
-            <li class="advantages__item advantages__item--healthy">
-              <span class="advantages__number">1</span>
-              <p class="advantages__text">Функциональное питание содержит только полезные питательные вещества.</p>
-            </li>
-            <li class="advantages__item advantages__item--fast">
-              <span class="advantages__number">2</span>
-              <p class="advantages__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
-            </li>
-            <li class="advantages__item advantages__item--functional">
-              <span class="advantages__number">3</span>
-              <p class="advantages__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
-            </li>
-            <li class="advantages__item advantages__item--changes">
-              <span class="advantages__number">4</span>
-              <p class="advantages__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
-            </li>
-          </ol>
-        </section>
-        <section class="example">
-          <div class="example__wrapper">
-            <div class="example__textarea">
-              <h2 class="example__headline section-headline section-headline--example">Живой пример</h2>
-              <p class="example__text">
-                Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-              </p>
-              <div class="example__stats stats">
-                <div class="stats__container">
-                    <b class="stats__value">5 КГ</b>
-                    <span class="stats__name">снижение веса</span>
-                </div>
-                <div class="stats__container">
-                  <b class="stats__value">60 ДНЕЙ</b>
-                  <span class="stats__name stats__name--big">затрачено времени</span>
-                </div>
-                <p class="stats__results">Затраты на питание: <span>15 000 РУБ.</span></p>
-              </div>
-            </div>
-            <div class="example__slder before-after">
-              <div class="before-after__before">
-                <picture>
-                  <source media="(min-width: 768px)" srcset="./img/index/fat-cat-tablet.webp, ./img/index/fat-cat-tablet@2x.webp 2x" width="560" height="512">
-                  <source media="(min-width: 768px)" srcset="./img/index/fat-cat-tablet.png, ./img/index/fat-cat-tablet@2x.png 2x" width="560" height="512">
-                  <img class="before-after__image before-after__image--before" src="./img/index/fat-cat-mobile.webp" srcset="./img/index/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Кот 'до'.">
-                </picture>
-              </div>
-              <div class="before-after__after">
-                <picture>
-                  <source media="(min-width: 768px)" srcset="./img/index/slim-cat-tablet.webp, ./img/index/slim-cat-tablet@2x.webp 2x" width="560" height="512">
-                  <source media="(min-width: 768px)" srcset="./img/index/slim-cat-tablet.png, ./img/index/slim-cat-tablet@2x.png 2x" width="560" height="512">
-                  <img class="before-after__image before-after__image--after" src="./img/index/slim-cat-mobile.webp" srcset="./img/index/slim-cat-mobile@2x.png 2x" width="280" height="256" alt="Кот 'после'.">
-                </picture>
-              </div>
-                <button class="before-after__button" type="button">
-                  <span class="visually-hidden">Сравнить.</span>
-                  <span class="before-after__button-elements"></span>
-                </button>
-            </div>
-          </div>
-        </section>
-        <section class="location">
-          <h2 class="visually-hidden">Как нас найти?</h2>
-          <div class="location__address address">
-            <b class="address__collaborate">приглашаем<br>к сотрудничеству дилеров!</b>
-            <p class="address__location">
-              ул. Большая <br>Конюшенная, д. 19/8
-              <span class="address__location-city">Санкт-Петербург</span>
-            </p>
-          </div>
-          <div class="location__map map">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="./img/index/location-desktop.webp, ./img/index/location-desktop@2x.webp 2x" width="1440" height="400">
-              <source media="(min-width: 1200px)" srcset="./img/index/location-desktop.png, ./img/index/location-desktop@2x.png 2x" width="1440" height="400">
-              <source media="(min-width: 768px)" srcset="./img/index/location-tablet.webp, ./img/index/location-tablet@2x.webp 2x" width="768" height="400">
-              <source media="(min-width: 768px)" srcset="./img/index/location-tablet.png, ./img/index/location-tablet@2x.png 2x" width="768" height="400">
-              <img class="map__image" src="./img/index/location-mobile.webp" srcset="./img/index/location-mobile@2x.png 2x" alt="Как до нас добраться." width="320" height="362">
-            </picture>
-            <iframe class="map__google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036296175446!2d30.318176492116848!3d59.9387190974212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1686943776856!5m2!1sru!2sru" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </div>
-        </section>
-      </main>
-      <footer class="page-footer">
-        <div class="page-footer__wrapper">
-          <a class="page-footer__logo-link" href="./index.html">
-            <span class="visually-hidden">CAR ENERGY</span>
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__topline">
+          <a class="header__logo logo">
+            <span class="logo__title">Ягода</span>
           </a>
-          <ul class="page-footer__social social-list">
-            <li class="social-list__item">
-              <a class="social-list__link social-list__link--vk" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">Вконтакте.</span>
-              </a>
+          <button class="header__toggle header__toggle--closed header__toggle--nojs" type="button">
+            <span class="visually-hidden">Меню</span>
+          </button>
+        </div>
+        <nav class="main-navigation main-navigation--closed main-navigation--nojs">
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item">
+              <a class="main-navigation__link main-navigation__link--current" href="#">Каталог</a>
             </li>
-            <li class="social-list__item">
-              <a class="social-list__link social-list__link--yt" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">
-                <span class="visually-hidden">YouTube</span>
-              </a>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="#">Новости</a>
             </li>
-            <li class="social-list__item">
-              <a class="social-list__link social-list__link--tg" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Telegram</span>
-              </a>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="#">Контакты</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="./form.html">Заказать</a>
             </li>
           </ul>
-          <div class="page-footer__copyright copyright">
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              HTML Academy
-            </a>
-          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main-container">
+      <section class="page-section page-section--hero hero-section">
+        <div class="hero-section__container">
+          <h1 class="hero-section__headline page-headline page-headline--hero">Ягоды <br>с доставкой </h1>
+          <ul class="hero-section__list hero-list">
+            <li class="hero-list__item hero-list__item--berries">Отборные ягоды</li>
+            <li class="hero-list__item hero-list__item--flavor">Натуральный вкус сохранён методом шоковой заморозки</li>
+            <li class="hero-list__item hero-list__item--delivery">Доставка по Санкт-Петербургу</li>
+          </ul>
+          <a class="hero-section__button button button--big" href="./form.html">Заказать</a>
         </div>
-      </footer>
-    </div>
-    <script src="./js/script.js"></script>
+      </section>
+      <section class="page-section catalog-section">
+        <h2 class="page-headline page-headline--catalog catalog-section__headline">Каталог</h2>
+        <ul class="catalog">
+          <li class="catalog__item">
+            <a class="catalog__img-link" href="#">
+              <picture>
+                <source type="image/webp" srcset="./img/index/raspberry.webp, ./img/index/raspberry@2x.webp 2x">
+                <img class="catalog__image" src="./img/index/raspberry.jpg" srcset="./img/index/raspberry@2x.jpg 2x" alt="Малина" width="264" height="180">
+              </picture>
+            </a>
+            <b class="catalog__name">Малина</b>
+            <div class="catalog__text">
+              <span class="catalog__price">350 ₽</span>
+              <span class="catalog__weight">за 1 кг</span>
+            </div>
+            <a class="catalog__button button" href="#">Заказать</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__img-link" href="#">
+              <picture>
+                <source type="image/webp" srcset="./img/index/blackberry.webp, ./img/index/blackberry@2x.webp 2x">
+                <img class="catalog__image" src="./img/index/blackberry.jpg" srcset="./img/index/blackberry@2x.jpg 2x" alt="Ежевика" width="264" height="180">
+              </picture>
+            </a>
+            <b class="catalog__name">Ежевика</b>
+            <div class="catalog__text">
+              <span class="catalog__price">550 ₽</span>
+              <span class="catalog__weight">за 1 кг</span>
+            </div>
+            <a class="catalog__button button" href="#">Заказать</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__img-link" href="#">
+              <picture>
+                <source type="image/webp" srcset="./img/index/lingonberries.webp, ./img/index/lingonberries@2x.webp 2x">
+                <img class="catalog__image" src="./img/index/lingonberries.jpg" srcset="./img/index/lingonberries@2x.jpg 2x" alt="Брусника" width="264" height="180">
+              </picture>
+            </a>
+            <b class="catalog__name">Брусника</b>
+            <div class="catalog__text">
+              <span class="catalog__price">390 ₽</span>
+              <span class="catalog__weight">за 1 кг</span>
+            </div>
+            <a class="catalog__button button" href="#">Заказать</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__img-link" href="#">
+              <picture>
+                <source type="image/webp" srcset="./img/index/strawberry.webp, ./img/index/strawberry@2x.webp 2x">
+                <img class="catalog__image" src="./img/index/strawberry.jpg" srcset="./img/index/strawberry@2x.jpg 2x" alt="Клубника" width="264" height="180">
+              </picture>
+            </a>
+            <b class="catalog__name">Клубника</b>
+            <div class="catalog__text">
+              <span class="catalog__price">450 ₽</span>
+              <span class="catalog__weight">за 1 кг</span>
+            </div>
+            <a class="catalog__button button" href="#">Заказать</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__img-link" href="#">
+              <picture>
+                <source type="image/webp" srcset="./img/index/cherry.webp, ./img/index/cherry@2x.webp 2x">
+                <img class="catalog__image" src="./img/index/cherry.jpg" srcset="./img/index/cherry@2x.jpg 2x" alt="Вишня" width="264" height="180">
+              </picture>
+            </a>
+            <b class="catalog__name">Вишня</b>
+            <div class="catalog__text">
+              <span class="catalog__price">375 ₽</span>
+              <span class="catalog__weight">за 1 кг</span>
+            </div>
+            <a class="catalog__button button" href="#">Заказать</a>
+          </li>
+          <li class="catalog__item">
+            <a class="catalog__img-link" href="#">
+              <picture>
+                <source type="image/webp" srcset="./img/index/gooseberry.webp, ./img/index/gooseberry@2x.webp 2x">
+                <img class="catalog__image" src="./img/index/gooseberry.jpg" srcset="./img/index/gooseberry@2x.jpg 2x" alt="Крыжовник" width="264" height="180">
+              </picture>
+            </a>
+            <b class="catalog__name">Крыжовник</b>
+            <div class="catalog__text">
+              <span class="catalog__price">300 ₽</span>
+              <span class="catalog__weight">за 1 кг</span>
+            </div>
+            <a class="catalog__button button" href="#">Заказать</a>
+          </li>
+          <li class="catalog__item catalog__item--extra">
+            <a class="catalog__img-link" href="#">
+              <picture>
+                <source type="image/webp" srcset="./img/index/blueberry.webp, ./img/index/blueberry@2x.webp 2x">
+                <img class="catalog__image" src="./img/index/blueberry.jpg" srcset="./img/index/blueberry@2x.jpg 2x" alt="Голубика" width="264" height="180">
+              </picture>
+            </a>
+            <b class="catalog__name">Голубика</b>
+            <div class="catalog__text">
+              <span class="catalog__price">510 ₽</span>
+              <span class="catalog__weight">за 1 кг</span>
+            </div>
+            <a class="catalog__button button" href="#">Заказать</a>
+          </li>
+          <li class="catalog__item catalog__item--extra">
+            <a class="catalog__img-link" href="#">
+              <picture>
+                <source type="image/webp" srcset="./img/index/cranberry.webp, ./img/index/cranberry@2x.webp 2x">
+                <img class="catalog__image" src="./img/index/cranberry.jpg" srcset="./img/index/cranberry@2x.jpg 2x" alt="Клюква" width="264" height="180">
+              </picture>
+            </a>
+            <b class="catalog__name">Клюква</b>
+            <div class="catalog__text">
+              <span class="catalog__price">320 ₽</span>
+              <span class="catalog__weight">за 1 кг</span>
+            </div>
+            <a class="catalog__button button" href="#">Заказать</a>
+          </li>
+        </ul>
+      </section>
+      <section class="page-section news-section">
+        <h2 class="page-headline page-headline--news news-section__headline">Что новенького?</h2>
+        <ul class="news-section__list news-cards">
+          <li class="news-cards__item">
+            <a class="news-cards__link" href="#">
+              <b class="news-cards__title">Новый урожай клубники</b>
+              <p class="news-cards__text">К нам поступила свежая сочная ароматная клубника
+                <br class="news-cards__phone-brake">из Алтайского края. Крупные отборные ягоды<br class="news-cards__desktop-brake">можно приобрести свежими <br class="news-cards__desktop-brake">от 200 гр, или замороженными <br class="news-cards__desktop-brake">от 1 кг. Поторопитесь, сезон <br class="news-cards__desktop-brake">клубники короткий и свежие ягоды скоро закончатся.</p>
+              <time class="news-cards__date" datetime="2022-06-22">22 июня 2022</time>
+            </a>
+          </li>
+          <li class="news-cards__item">
+            <a class="news-cards__link" href="#">
+              <b class="news-cards__title">В июне дарим скидку 15% на все свежие ягоды</b>
+              <p class="news-cards__text">Свежие ягоды урожая этого года <br>со скидкой 15%.  Клубнику, <br class="news-cards__phone-brake">малину, голубику, вишню доставим <br class="news-cards__tablet-brake">от 200 гр. </p>
+              <time class="news-cards__date" datetime="2022-06-15">15 июня 2022</time>
+            </a>
+          </li>
+          <li class="news-cards__item">
+            <a class="news-cards__link" href="#">
+              <b class="news-cards__title">Микс из ягод</b>
+              <p class="news-cards__text">Мы приготовим для вас смеси
+                <br>из различных замороженных ягод <br>по вашему пожеланию. Ягодные смеси удобно использовать для приготовления напитков. Все ягоды замораживаются методом шоковой заморозки, что позволяет <br class="news-cards__tablet-brake">сохранить
+                <br class="news-cards__phone-brake">их естественный вкус <br class="news-cards__tablet-brake">и аромат.</p>
+              <time class="news-cards__date" datetime="2022-06-02">02 июня 2022</time>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="page-section contacts-section">
+        <div class="contacts-section__text-container">
+          <h2 class="page-headline page-headline--contacts contacts-section__headline">Где забрать ягоды?</h2>
+          <span class="contacts-section__text">Забери ягоды с нашего склада по адресу:</span>
+          <ul class="contacts-section__list">
+            <li class="contacts-section__item">
+              <a class="contacts-section__link contacts-section__link--address">
+                Набережная Обводного канала, 101
+              </a>
+            </li>
+            <li class="contacts-section__item">
+              <a class="contacts-section__link contacts-section__link--phone" href="tel:+79105244118">+ 7 910 524 41 18</a>
+            </li>
+            <li class="contacts-section__item">
+              <a class="contacts-section__link  contacts-section__link--mail" href="mailto:info@yagoda.ru">info@yagoda.ru</a>
+            </li>
+          </ul>
+        </div>
+        <div class="contacts-section__map-container map">
+          <a class="map__full-pic" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="./img/index/map-desktop.webp, ./img/index/map-desktop@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="./img/index/map-desktop.jpg, ./img/index/map-desktop@2x.jpg 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="./img/index/map-tablet.webp, ./img/index/map-tablet@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="./img/index/map-tablet.jpg, ./img/index/map-tablet@2x.jpg 2x">
+              <source type="image/webp" srcset="./img/index/map-mobile.webp, ./img/index/map-mobile@2x.webp 2x">
+              <img class="map__image" src="./img/index/map-mobile.jpg" srcset="./img/index/map-mobile@2x.jpg 2x" alt="Как до нас добраться." width="320" height="372">
+            </picture>
+          </a>
+          <iframe class="map__google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.1323589223232!2d30.32864907679764!3d59.91335066413681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469630519ea47935%3A0x3458dd62ea82672d!2z0L3QsNCx0LXRgNC10LbQvdCw0Y8g0J7QsdCy0L7QtNC90L7Qs9C-INC60LDQvdCw0LvQsCwgMTAxLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkwMDEz!5e0!3m2!1sru!2sru!4v1694547601650!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <a class="footer__logo logo">
+          <span class="logo__title">Ягода</span>
+        </a>
+        <ul class="footer__social social-list">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--tg" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Telegram</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--vk" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Вконтакте.</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--yt" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">
+              <span class="visually-hidden">YouTube</span>
+            </a>
+          </li>
+        </ul>
+        <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
+    <script src="./js/script.js" defer></script>
   </body>
 </html>

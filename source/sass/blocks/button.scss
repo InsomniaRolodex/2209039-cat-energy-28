@@ -1,90 +1,47 @@
-@use "../variables.scss" as v;
+@use "./global/variables.scss" as v;
+@use "./global/mixins.scss" as m;
 
 .button {
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 1px;
+  width: 220px;
+  min-height: 52px;
+  color: v.$bg-color;
+  background-color: v.$decorate-color;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  width: 100%;
-  min-height: 40px;
-  color: v.$background;
-  background-color: v.$decorate-color;
   border: none;
-  outline: none;
-  cursor: pointer;
+  border-radius: 40px;
   transition-duration: 0.3s;
-
-  &:hover,
-  &:focus-visible {
-    background-color: #5eaa2f;
-    outline: none;
-  }
-
-  &:active {
-    background-color: #5eaa2f;
-    color: rgba(v.$background, 0.3);
-  }
+  cursor: pointer;
 }
 
-.button--promo {
-  font-size: 14px;
-  line-height: 18px;
-
-  @media (max-width: v.$max-phone) {
-    max-width: 280px;
-  }
+.button--big {
+  letter-spacing: 1.5px;
+  width: 264px;
+  min-height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(v.$shadow-color, 0.25);
 
   @media (min-width: v.$tablet-width) {
-    font-size: 20px;
-    line-height: 20px;
-    max-width: 244px;
-    min-height: 54px;
-    margin-left: 91px;
-  }
-
-  @media (min-width: v.$desktop-width) {
-    margin-left: 80px;
+    font-size: 28px;
+    line-height: 33px;
+    width: 336px;
+    min-height: 68px;
   }
 }
 
-.button--food {
-  margin-top: auto;
+.button:hover,
+.button:focus-visible {
+  background-color: v.$button-hover;
+  outline: none;
 }
 
-.button--more {
-  background-color: v.$background-secondary;
-  color: v.$secondary-text;
-
-  &:hover,
-  &:focus {
-    background-color: #ebebeb;
-  }
-
-  &:active {
-    color: rgba(v.$secondary-text, 0.3);
-  }
-}
-
-.button--extra {
-  @media (min-width: v.$desktop-width) {
-    max-width: 244px;
-    margin-left: 40px;
-  }
-}
-
-.button--form {
-  @media (min-width: v.$tablet-width) {
-    font-size: 20px;
-    max-width: 283px;
-    min-height: 57px;
-  }
-
-  @media (min-width: v.$desktop-width) {
-    min-height: 52px;
-    max-width: 568px;
-  }
+.button:active {
+  background-color: rgba(v.$decorate-color, 0.25);
 }
